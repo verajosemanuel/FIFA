@@ -34,7 +34,7 @@ library(htmltools)
 library(hrbrthemes)
 library(DataExplorer)
 library(tidyverse)
-
+library(viridis)
 ```
 
 ## DATA LOAD
@@ -307,10 +307,14 @@ Tasks:
 
 ```{r continents, fig.width=12,fig.height=12}
 
-players_by_country <- PlayerPersonalData %>%
+# Loading geographical data per player
+
+players_by_country <- 
+             PlayerPersonalData %>%
   group_by(Nationality) %>%
   tally() %>%
-  magrittr::set_colnames(c("region","value")) %>% 
+  magrittr::set_colnames(c("region","value"))%>% 
+  ungroup() %>% 
    mutate(
     region = ifelse(region == "United States", "USA", region),
     region = ifelse(region == "DR Congo", "Democratic Republic of the Congo", region),
@@ -323,32 +327,238 @@ players_by_country <- PlayerPersonalData %>%
     region = ifelse(region == "Republic of Ireland", "Ireland", region),
     region = ifelse(region == "Central African Rep.", "Central African Republic", region),
     region = ifelse(region == "Wales", "UK", region)
-    )  %>% 
-  ungroup()
+    )  
+
+
+# loading world maps data
 
 world_map <- map_data("world")
+
+# joining map data with players data
+
 players_map <- left_join(players_by_country, world_map, by = "region") %>% 
   rename(players=value)
-library(viridis)
-g <- ggplot(players_map, aes(long, lat, group = group))+
+
+players_map$hover <- with(players_map, paste0(region,"<br>",players))
+
+g <- ggplot(players_map, aes(long, lat, group = group, text=hover))+
   geom_polygon(aes(fill = players), color = "white")+
-   scale_fill_viridis_d(option = "C") +
+   scale_fill_viridis_c(option = "C") +
    labs(title='# Players by Continent / Country')+
   hrbrthemes::theme_ipsum() 
 
 
-
-# g <- ggplot(players_map, aes(long, lat, group = group))+
-# ggiraph::geom_polygon_interactive(color='black',aes(long, lat, group=group, fill=value,
-#         tooltip=sprintf("%s<br/>%s",region,value))) +
-#   hrbrthemes::theme_ipsum() +
-#   colormap::scale_fill_colormap(colormap=colormap::colormaps$copper, reverse = T) +
-#   labs(title='Players per country', subtitle='As number by country')
-# widgetframe::frameWidget(ggiraph::ggiraph(code=print(g)))
-
-
-ggplotly(g, hoverinfo = paste0(region,players))
+ggplotly(g,tooltip="text")
 
 
 ```
 
+# Top languages per Continent: Faceted version
+
+```{r continentamount, fig.width=10}
+
+continent_facets <- players_languages %>%
+  group_by(continent,languages) %>% 
+  tally() %>%
+  arrange(desc(n)) %>% 
+  top_n(n = 5) 
+
+
+ggplot(continent_facets,
+       aes(
+         x = reorder(languages, n),
+         y = n,
+         fill = languages,
+         palette = "dark2"
+       )) +
+  geom_bar(stat = "identity") +
+  geom_text(
+    aes(label = n),
+    vjust = 0.5,
+    hjust = 1,
+    color = "black",
+    size = 4
+  ) +
+  xlab("") +
+  coord_flip() +
+  theme_minimal()+
+  theme(
+    legend.position = "none",
+    plot.title = element_text(color = "black", size = 14, face = "bold"),
+    plot.subtitle = element_text(size = 10)
+  ) +
+  facet_grid(~ continent, scales = "free", space = "free")
+  
+  
+```
+
+
+# Languages per continent (non faceted version)
+
+```{r asialang, fig.width=6}
+continent_facets %>% filter(continent=="Asia") %>% 
+  ggplot( aes(
+         x = reorder(languages, n),
+         y = n,
+         fill = languages,
+         palette = "dark2"
+       )) +
+  geom_bar(stat = "identity") +
+  geom_text(
+    aes(label = n),
+    vjust = 0.5,
+    hjust = 1,
+    color = "white",
+    size = 4
+  ) +
+  xlab("") +
+  coord_flip() +
+  theme_minimal()+
+  theme(
+    legend.position = "none",
+    plot.title = element_text(color = "black", size = 14, face = "bold"),
+    plot.subtitle = element_text(size = 10)
+  ) +
+  labs(title = "TOP 5 Asiatic Players Languages")
+
+```
+```{r EUROlang, fig.width=5}
+continent_facets %>% filter(continent=="Europe") %>% 
+  ggplot( aes(
+         x = reorder(languages, n),
+         y = n,
+         fill = languages,
+         palette = "dark2"
+       )) +
+  geom_bar(stat = "identity") +
+  geom_text(
+    aes(label = n),
+    vjust = 0.5,
+    hjust = 1,
+    color = "white",
+    size = 4
+  ) +
+  xlab("") +
+  coord_flip() +
+  theme_minimal()+
+  theme(
+    legend.position = "none",
+    plot.title = element_text(color = "black", size = 14, face = "bold"),
+    plot.subtitle = element_text(size = 10)
+  ) +
+  labs(title = "TOP 5 Europe Players Languages")
+
+```
+```{r Africalang, fig.width=6}
+continent_facets %>% filter(continent=="Africa") %>% 
+  ggplot( aes(
+         x = reorder(languages, n),
+         y = n,
+         fill = languages,
+         palette = "dark2"
+       )) +
+  geom_bar(stat = "identity") +
+  geom_text(
+    aes(label = n),
+    vjust = 0.5,
+    hjust = 1,
+    color = "white",
+    size = 4
+  ) +
+  xlab("") +
+  coord_flip() +
+  theme_minimal()+
+  theme(
+    legend.position = "none",
+    plot.title = element_text(color = "black", size = 14, face = "bold"),
+    plot.subtitle = element_text(size = 10)
+  ) +
+  labs(title = "TOP 5 African players languages")
+
+```
+
+```{r southamlang, fig.width=6}
+continent_facets %>% filter(continent=="South America") %>% 
+  ggplot( aes(
+         x = reorder(languages, n),
+         y = n,
+         fill = languages,
+         palette = "dark2"
+       )) +
+  geom_bar(stat = "identity") +
+  geom_text(
+    aes(label = n),
+    vjust = 0.5,
+    hjust = 1,
+    color = "white",
+    size = 4
+  ) +
+  xlab("") +
+  coord_flip() +
+  theme_minimal()+
+  theme(
+    legend.position = "none",
+    plot.title = element_text(color = "black", size = 14, face = "bold"),
+    plot.subtitle = element_text(size = 10)
+  ) +
+  labs(title = "TOP 5 South American players languages")
+
+```
+
+
+```{r northamlang, fig.width=6}
+continent_facets %>% filter(continent=="North America") %>% 
+  ggplot( aes(
+         x = reorder(languages, n),
+         y = n,
+         fill = languages,
+         palette = "dark2"
+       )) +
+  geom_bar(stat = "identity") +
+  geom_text(
+    aes(label = n),
+    vjust = 0.5,
+    hjust = 1,
+    color = "white",
+    size = 4
+  ) +
+  xlab("") +
+  coord_flip() +
+  theme_minimal()+
+  theme(
+    legend.position = "none",
+    plot.title = element_text(color = "black", size = 14, face = "bold"),
+    plot.subtitle = element_text(size = 10)
+  ) +
+  labs(title = "TOP 5 North American players languages")
+
+```
+
+
+```{r oceanialang, fig.width=6}
+continent_facets %>% filter(continent=="Oceania") %>% 
+  ggplot( aes(
+         x = reorder(languages, n),
+         y = n,
+         fill = languages,
+         palette = "dark2"
+       )) +
+  geom_bar(stat = "identity") +
+  geom_text(
+    aes(label = n),
+    vjust = 0.5,
+    hjust = 1,
+    color = "white",
+    size = 4
+  ) +
+  xlab("") +
+  coord_flip() +
+  theme_minimal()+
+  theme(
+    legend.position = "none",
+    plot.title = element_text(color = "black", size = 14, face = "bold"),
+    plot.subtitle = element_text(size = 10)
+  ) +
+  labs(title = "TOP 5 Oceania players languages")
+
+```

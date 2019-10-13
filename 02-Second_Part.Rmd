@@ -1,0 +1,371 @@
+---
+title: "EA Challenge - part 2"
+author: "Jose Manuel Vera"
+date: "`r Sys.Date()`"
+output:
+  prettydoc::html_pretty:
+    theme: Cayman
+    highlight: github
+---
+
+List of required libraries. 
+
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE, warning=FALSE, message=FALSE)
+
+```
+
+```{r libraries}
+
+rm(list=ls())
+
+library(rio)
+library(broom)
+library(knitr)
+library(plotly)
+library(RColorBrewer)
+library(kableExtra)
+library(summarytools)
+library(prettydoc)
+library(jsonlite)
+library(maps)
+library(htmltools)
+library(hrbrthemes)
+library(DataExplorer)
+library(tidyverse)
+library(magrittr)
+library(viridis)
+
+```
+
+## DATA LOAD
+
+
+```{r csvload}
+mydata <-
+    rio::import_list(dir("raw_data/",full.names = TRUE,pattern = "*.csv"),
+                     rbind = FALSE)
+
+# removing redundant data: "CompleteDataset"
+mydata <- mydata[names(mydata) != "CompleteDataset"] 
+
+# Force numeric all numeric columns in Player Attribute Data
+mydata$PlayerAttributeData[]  <- lapply(mydata$PlayerAttributeData, function(x) as.numeric(as.character(x)))
+
+# Remove index/rowname columns in all dataframes
+mydata <- lapply(mydata, function(x) { x["V1"] <- NULL; x })
+
+# Personal Data has an "Unnamed:0" Column. Get rid of it (First Col)
+mydata$PlayerPersonalData <- mydata$PlayerPersonalData[2:ncol(mydata$PlayerPersonalData)]
+
+
+# Extracting dataframes from list to global environment
+# (This is optional. Working with list of objects is easier in R.
+# Executed here just for easier workflow comprehension)
+list2env(mydata, globalenv()) 
+
+
+countries <- fromJSON("raw_data/countries.json") %>%
+            data.table::rbindlist() %>%
+            as_tibble() %>%
+            mutate(languages = map(languages, ~ replace(.x, is.null(.x), "unknown"))) %>%  # avoid empty list items
+            mutate(languages = unlist(languages)) %>%
+            rename(lang_code = languages, country_name = name, native_name = native)
+
+
+
+languages <- tibble(col = fromJSON("raw_data/languages.json")) %>%
+             unnest_wider(col) %>%
+             mutate(languages = names(fromJSON("raw_data/languages.json"))) %>%
+             rename(lang_code = languages, lang_name = name, native_lang = native)
+
+
+
+continents <- fromJSON("raw_data/continents.json") %>%
+              unlist() %>%
+              stack() %>%
+              rename(continent = ind, continent_name = values)
+
+
+final_languages_csv <-
+              inner_join(countries, languages, by = "lang_code") %>%
+              inner_join(continents, by = "continent") %>%
+              select(-rtl)
+
+
+players_languages <-
+  inner_join(final_languages_csv,
+             PlayerPersonalData,
+             by = c("country_name" = "Nationality"))  %>%
+  select(lang_name, Club, country_name, continent_name, Name) %>%
+  group_by(Name) %>%
+  summarise(
+    languages = toString(unique(lang_name)),
+    club =  first(Club),
+    country = first(country_name),
+    continent = first(continent_name)
+  )
+
+```
+
+
+## Players by Country
+
+```{r continents, fig.width=12,fig.height=12}
+
+# Loading geographical data per player
+
+players_by_country <- 
+             PlayerPersonalData %>%
+  group_by(Nationality) %>%
+  tally() %>%
+  magrittr::set_colnames(c("region","value"))%>% 
+  ungroup() %>% 
+   mutate(
+    region = ifelse(region == "United States", "USA", region),
+    region = ifelse(region == "DR Congo", "Democratic Republic of the Congo", region),
+    region = ifelse(region == "China PR", "China", region),
+    region = ifelse(region == "Congo", "Democratic Republic of the Congo", region),
+    region = ifelse(region == "Bosnia Herzegovina", "Bosnia and Herzegovina", region),
+    region = ifelse(region == "Scotland", "UK", region),
+    region = ifelse(region == "England", "UK", region),
+    region = ifelse(region == "Northern Ireland", "Ireland", region),
+    region = ifelse(region == "Republic of Ireland", "Ireland", region),
+    region = ifelse(region == "Central African Rep.", "Central African Republic", region),
+    region = ifelse(region == "Wales", "UK", region)
+    )  
+
+
+# loading world maps data
+
+world_map <- map_data("world")
+
+# joining map data with players data
+
+players_map <- left_join(players_by_country, world_map, by = "region") %>% 
+  rename(players=value)
+
+players_map$hover <- with(players_map, paste0(region,"<br>",players))
+
+g <- ggplot(players_map, aes(long, lat, group = group, text=hover))+
+  geom_polygon(aes(fill = players), color = "white")+
+   scale_fill_viridis_c(option = "C") +
+   labs(title='# Players by Continent / Country')+
+  hrbrthemes::theme_ipsum() 
+
+
+ggplotly(g,tooltip="text")
+
+
+```
+
+# Top languages per Continent: Faceted version
+
+```{r continentamount, fig.width=10}
+
+continent_facets <- players_languages %>%
+  group_by(continent,languages) %>% 
+  tally() %>%
+  arrange(desc(n)) %>% 
+  top_n(n = 5) 
+
+
+ggplot(continent_facets,
+       aes(
+         x = reorder(languages, n),
+         y = n,
+         fill = languages,
+         palette = "dark2"
+       )) +
+  geom_bar(stat = "identity") +
+  geom_text(
+    aes(label = n),
+    vjust = 0.5,
+    hjust = 1,
+    color = "black",
+    size = 4
+  ) +
+  xlab("") +
+  coord_flip() +
+  theme_minimal()+
+  theme(
+    legend.position = "none",
+    plot.title = element_text(color = "black", size = 14, face = "bold"),
+    plot.subtitle = element_text(size = 10)
+  ) +
+  facet_grid(~ continent, scales = "free", space = "free")
+  
+  
+```
+
+
+# Languages per continent (non faceted version)
+
+```{r asialang, fig.width=6}
+continent_facets %>% filter(continent=="Asia") %>% 
+  ggplot( aes(
+         x = reorder(languages, n),
+         y = n,
+         fill = languages,
+         palette = "dark2"
+       )) +
+  geom_bar(stat = "identity") +
+  geom_text(
+    aes(label = n),
+    vjust = 0.5,
+    hjust = 1,
+    color = "white",
+    size = 4
+  ) +
+  xlab("") +
+  coord_flip() +
+  theme_minimal()+
+  theme(
+    legend.position = "none",
+    plot.title = element_text(color = "black", size = 14, face = "bold"),
+    plot.subtitle = element_text(size = 10)
+  ) +
+  labs(title = "TOP 5 Asiatic Players Languages")
+
+```
+```{r EUROlang, fig.width=5}
+continent_facets %>% filter(continent=="Europe") %>% 
+  ggplot( aes(
+         x = reorder(languages, n),
+         y = n,
+         fill = languages,
+         palette = "dark2"
+       )) +
+  geom_bar(stat = "identity") +
+  geom_text(
+    aes(label = n),
+    vjust = 0.5,
+    hjust = 1,
+    color = "white",
+    size = 4
+  ) +
+  xlab("") +
+  coord_flip() +
+  theme_minimal()+
+  theme(
+    legend.position = "none",
+    plot.title = element_text(color = "black", size = 14, face = "bold"),
+    plot.subtitle = element_text(size = 10)
+  ) +
+  labs(title = "TOP 5 Europe Players Languages")
+
+```
+```{r Africalang, fig.width=6}
+continent_facets %>% filter(continent=="Africa") %>% 
+  ggplot( aes(
+         x = reorder(languages, n),
+         y = n,
+         fill = languages,
+         palette = "dark2"
+       )) +
+  geom_bar(stat = "identity") +
+  geom_text(
+    aes(label = n),
+    vjust = 0.5,
+    hjust = 1,
+    color = "white",
+    size = 4
+  ) +
+  xlab("") +
+  coord_flip() +
+  theme_minimal()+
+  theme(
+    legend.position = "none",
+    plot.title = element_text(color = "black", size = 14, face = "bold"),
+    plot.subtitle = element_text(size = 10)
+  ) +
+  labs(title = "TOP 5 African players languages")
+
+```
+
+```{r southamlang, fig.width=6}
+continent_facets %>% filter(continent=="South America") %>% 
+  ggplot( aes(
+         x = reorder(languages, n),
+         y = n,
+         fill = languages,
+         palette = "dark2"
+       )) +
+  geom_bar(stat = "identity") +
+  geom_text(
+    aes(label = n),
+    vjust = 0.5,
+    hjust = 1,
+    color = "white",
+    size = 4
+  ) +
+  xlab("") +
+  coord_flip() +
+  theme_minimal()+
+  theme(
+    legend.position = "none",
+    plot.title = element_text(color = "black", size = 14, face = "bold"),
+    plot.subtitle = element_text(size = 10)
+  ) +
+  labs(title = "TOP 5 South American players languages")
+
+```
+
+
+```{r northamlang, fig.width=6}
+continent_facets %>% filter(continent=="North America") %>% 
+  ggplot( aes(
+         x = reorder(languages, n),
+         y = n,
+         fill = languages,
+         palette = "dark2"
+       )) +
+  geom_bar(stat = "identity") +
+  geom_text(
+    aes(label = n),
+    vjust = 0.5,
+    hjust = 1,
+    color = "white",
+    size = 4
+  ) +
+  xlab("") +
+  coord_flip() +
+  theme_minimal()+
+  theme(
+    legend.position = "none",
+    plot.title = element_text(color = "black", size = 14, face = "bold"),
+    plot.subtitle = element_text(size = 10)
+  ) +
+  labs(title = "TOP 5 North American players languages")
+
+```
+
+
+```{r oceanialang, fig.width=6}
+continent_facets %>% filter(continent=="Oceania") %>% 
+  ggplot( aes(
+         x = reorder(languages, n),
+         y = n,
+         fill = languages,
+         palette = "dark2"
+       )) +
+  geom_bar(stat = "identity") +
+  geom_text(
+    aes(label = n),
+    vjust = 0.5,
+    hjust = 1,
+    color = "white",
+    size = 4
+  ) +
+  xlab("") +
+  coord_flip() +
+  theme_minimal()+
+  theme(
+    legend.position = "none",
+    plot.title = element_text(color = "black", size = 14, face = "bold"),
+    plot.subtitle = element_text(size = 10)
+  ) +
+  labs(title = "TOP 5 Oceania players languages")
+
+```
