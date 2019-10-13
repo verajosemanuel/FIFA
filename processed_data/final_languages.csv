@@ -1,0 +1,366 @@
+country_name,native_name,phone,continent,capital,currency,lang_code,lang_name,native_lang,continent_name
+Andorra,Andorra,376,EU,Andorra la Vella,EUR,ca,Catalan,Català,Europe
+United Arab Emirates,دولة الإمارات العربية المتحدة,971,AS,Abu Dhabi,AED,ar,Arabic,العربية,Asia
+Afghanistan,افغانستان,93,AS,Kabul,AFN,ps,Pashto,پښتو,Asia
+Afghanistan,افغانستان,93,AS,Kabul,AFN,uz,Uzbek,Ўзбек,Asia
+Afghanistan,افغانستان,93,AS,Kabul,AFN,tk,Turkmen,Туркмен / تركمن,Asia
+Antigua and Barbuda,Antigua and Barbuda,1268,NA,Saint John's,XCD,en,English,English,North America
+Anguilla,Anguilla,1264,NA,The Valley,XCD,en,English,English,North America
+Albania,Shqipëria,355,EU,Tirana,ALL,sq,Albanian,Shqip,Europe
+Armenia,Հայաստան,374,AS,Yerevan,AMD,hy,Armenian,Հայերեն,Asia
+Armenia,Հայաստան,374,AS,Yerevan,AMD,ru,Russian,Русский,Asia
+Angola,Angola,244,AF,Luanda,AOA,pt,Portuguese,Português,Africa
+Argentina,Argentina,54,SA,Buenos Aires,ARS,es,Spanish,Español,South America
+Argentina,Argentina,54,SA,Buenos Aires,ARS,gn,Guarani,Avañe'ẽ,South America
+American Samoa,American Samoa,1684,OC,Pago Pago,USD,en,English,English,Oceania
+American Samoa,American Samoa,1684,OC,Pago Pago,USD,sm,Samoan,Gagana Samoa,Oceania
+Austria,Österreich,43,EU,Vienna,EUR,de,German,Deutsch,Europe
+Australia,Australia,61,OC,Canberra,AUD,en,English,English,Oceania
+Aruba,Aruba,297,NA,Oranjestad,AWG,nl,Dutch,Nederlands,North America
+Aruba,Aruba,297,NA,Oranjestad,AWG,pa,Panjabi / Punjabi,ਪੰਜਾਬੀ / पंजाबी / پنجابي,North America
+Åland,Åland,358,EU,Mariehamn,EUR,sv,Swedish,Svenska,Europe
+Azerbaijan,Azərbaycan,994,AS,Baku,AZN,az,Azerbaijani,Azərbaycanca / آذربايجان,Asia
+Bosnia and Herzegovina,Bosna i Hercegovina,387,EU,Sarajevo,BAM,bs,Bosnian,Bosanski,Europe
+Bosnia and Herzegovina,Bosna i Hercegovina,387,EU,Sarajevo,BAM,hr,Croatian,Hrvatski,Europe
+Bosnia and Herzegovina,Bosna i Hercegovina,387,EU,Sarajevo,BAM,sr,Serbian,Српски,Europe
+Barbados,Barbados,1246,NA,Bridgetown,BBD,en,English,English,North America
+Bangladesh,Bangladesh,880,AS,Dhaka,BDT,bn,Bengali,বাংলা,Asia
+Belgium,België,32,EU,Brussels,EUR,nl,Dutch,Nederlands,Europe
+Belgium,België,32,EU,Brussels,EUR,fr,French,Français,Europe
+Belgium,België,32,EU,Brussels,EUR,de,German,Deutsch,Europe
+Burkina Faso,Burkina Faso,226,AF,Ouagadougou,XOF,fr,French,Français,Africa
+Burkina Faso,Burkina Faso,226,AF,Ouagadougou,XOF,ff,Peul,Fulfulde,Africa
+Bulgaria,България,359,EU,Sofia,BGN,bg,Bulgarian,Български,Europe
+Bahrain,‏البحرين,973,AS,Manama,BHD,ar,Arabic,العربية,Asia
+Burundi,Burundi,257,AF,Bujumbura,BIF,fr,French,Français,Africa
+Burundi,Burundi,257,AF,Bujumbura,BIF,rn,Kirundi,Kirundi,Africa
+Benin,Bénin,229,AF,Porto-Novo,XOF,fr,French,Français,Africa
+Saint Barthélemy,Saint-Barthélemy,590,NA,Gustavia,EUR,fr,French,Français,North America
+Bermuda,Bermuda,1441,NA,Hamilton,BMD,en,English,English,North America
+Brunei,Negara Brunei Darussalam,673,AS,Bandar Seri Begawan,BND,ms,Malay,Bahasa Melayu,Asia
+Bolivia,Bolivia,591,SA,Sucre,"BOB,BOV",es,Spanish,Español,South America
+Bolivia,Bolivia,591,SA,Sucre,"BOB,BOV",ay,Aymara,Aymar,South America
+Bolivia,Bolivia,591,SA,Sucre,"BOB,BOV",qu,Quechua,Runa Simi,South America
+Bonaire,Bonaire,5997,NA,Kralendijk,USD,nl,Dutch,Nederlands,North America
+Brazil,Brasil,55,SA,Brasília,BRL,pt,Portuguese,Português,South America
+Bahamas,Bahamas,1242,NA,Nassau,BSD,en,English,English,North America
+Bhutan,ʼbrug-yul,975,AS,Thimphu,"BTN,INR",dz,Dzongkha,ཇོང་ཁ,Asia
+Bouvet Island,Bouvetøya,47,AN,"",NOK,no,Norwegian,Norsk (bokmål / riksmål),Antarctica
+Bouvet Island,Bouvetøya,47,AN,"",NOK,nn,Norwegian Nynorsk,Norsk (nynorsk),Antarctica
+Botswana,Botswana,267,AF,Gaborone,BWP,en,English,English,Africa
+Botswana,Botswana,267,AF,Gaborone,BWP,tn,Tswana,Setswana,Africa
+Belarus,Белару́сь,375,EU,Minsk,BYR,be,Belarusian,Беларуская,Europe
+Belarus,Белару́сь,375,EU,Minsk,BYR,ru,Russian,Русский,Europe
+Belize,Belize,501,NA,Belmopan,BZD,en,English,English,North America
+Belize,Belize,501,NA,Belmopan,BZD,es,Spanish,Español,North America
+Canada,Canada,1,NA,Ottawa,CAD,en,English,English,North America
+Canada,Canada,1,NA,Ottawa,CAD,fr,French,Français,North America
+Cocos [Keeling] Islands,Cocos (Keeling) Islands,61,AS,West Island,AUD,en,English,English,Asia
+Democratic Republic of the Congo,République démocratique du Congo,243,AF,Kinshasa,CDF,fr,French,Français,Africa
+Democratic Republic of the Congo,République démocratique du Congo,243,AF,Kinshasa,CDF,ln,Lingala,Lingála,Africa
+Democratic Republic of the Congo,République démocratique du Congo,243,AF,Kinshasa,CDF,kg,Kongo,KiKongo,Africa
+Democratic Republic of the Congo,République démocratique du Congo,243,AF,Kinshasa,CDF,sw,Swahili,Kiswahili,Africa
+Central African Republic,Ködörösêse tî Bêafrîka,236,AF,Bangui,XAF,fr,French,Français,Africa
+Central African Republic,Ködörösêse tî Bêafrîka,236,AF,Bangui,XAF,sg,Sango,Sängö,Africa
+Republic of the Congo,République du Congo,242,AF,Brazzaville,XAF,fr,French,Français,Africa
+Republic of the Congo,République du Congo,242,AF,Brazzaville,XAF,ln,Lingala,Lingála,Africa
+Switzerland,Schweiz,41,EU,Bern,"CHE,CHF,CHW",de,German,Deutsch,Europe
+Switzerland,Schweiz,41,EU,Bern,"CHE,CHF,CHW",fr,French,Français,Europe
+Switzerland,Schweiz,41,EU,Bern,"CHE,CHF,CHW",it,Italian,Italiano,Europe
+Ivory Coast,Côte d'Ivoire,225,AF,Yamoussoukro,XOF,fr,French,Français,Africa
+Cook Islands,Cook Islands,682,OC,Avarua,NZD,en,English,English,Oceania
+Chile,Chile,56,SA,Santiago,"CLF,CLP",es,Spanish,Español,South America
+Cameroon,Cameroon,237,AF,Yaoundé,XAF,en,English,English,Africa
+Cameroon,Cameroon,237,AF,Yaoundé,XAF,fr,French,Français,Africa
+China,中国,86,AS,Beijing,CNY,zh,Chinese,中文,Asia
+Colombia,Colombia,57,SA,Bogotá,COP,es,Spanish,Español,South America
+Costa Rica,Costa Rica,506,NA,San José,CRC,es,Spanish,Español,North America
+Cuba,Cuba,53,NA,Havana,"CUC,CUP",es,Spanish,Español,North America
+Cape Verde,Cabo Verde,238,AF,Praia,CVE,pt,Portuguese,Português,Africa
+Curacao,Curaçao,5999,NA,Willemstad,ANG,nl,Dutch,Nederlands,North America
+Curacao,Curaçao,5999,NA,Willemstad,ANG,pa,Panjabi / Punjabi,ਪੰਜਾਬੀ / पंजाबी / پنجابي,North America
+Curacao,Curaçao,5999,NA,Willemstad,ANG,en,English,English,North America
+Christmas Island,Christmas Island,61,AS,Flying Fish Cove,AUD,en,English,English,Asia
+Cyprus,Κύπρος,357,EU,Nicosia,EUR,el,Greek,Ελληνικά,Europe
+Cyprus,Κύπρος,357,EU,Nicosia,EUR,tr,Turkish,Türkçe,Europe
+Cyprus,Κύπρος,357,EU,Nicosia,EUR,hy,Armenian,Հայերեն,Europe
+Czech Republic,Česká republika,420,EU,Prague,CZK,cs,Czech,Česky,Europe
+Czech Republic,Česká republika,420,EU,Prague,CZK,sk,Slovak,Slovenčina,Europe
+Germany,Deutschland,49,EU,Berlin,EUR,de,German,Deutsch,Europe
+Djibouti,Djibouti,253,AF,Djibouti,DJF,fr,French,Français,Africa
+Djibouti,Djibouti,253,AF,Djibouti,DJF,ar,Arabic,العربية,Africa
+Denmark,Danmark,45,EU,Copenhagen,DKK,da,Danish,Dansk,Europe
+Dominica,Dominica,1767,NA,Roseau,XCD,en,English,English,North America
+Dominican Republic,República Dominicana,"1809,1829,1849",NA,Santo Domingo,DOP,es,Spanish,Español,North America
+Algeria,الجزائر,213,AF,Algiers,DZD,ar,Arabic,العربية,Africa
+Ecuador,Ecuador,593,SA,Quito,USD,es,Spanish,Español,South America
+Estonia,Eesti,372,EU,Tallinn,EUR,et,Estonian,Eesti,Europe
+Egypt,مصر‎,20,AF,Cairo,EGP,ar,Arabic,العربية,Africa
+Western Sahara,الصحراء الغربية,212,AF,El Aaiún,"MAD,DZD,MRU",es,Spanish,Español,Africa
+Eritrea,ኤርትራ,291,AF,Asmara,ERN,ti,Tigrinya,ትግርኛ,Africa
+Eritrea,ኤርትራ,291,AF,Asmara,ERN,ar,Arabic,العربية,Africa
+Eritrea,ኤርትራ,291,AF,Asmara,ERN,en,English,English,Africa
+Spain,España,34,EU,Madrid,EUR,es,Spanish,Español,Europe
+Spain,España,34,EU,Madrid,EUR,eu,Basque,Euskara,Europe
+Spain,España,34,EU,Madrid,EUR,ca,Catalan,Català,Europe
+Spain,España,34,EU,Madrid,EUR,gl,Galician,Galego,Europe
+Spain,España,34,EU,Madrid,EUR,oc,Occitan,Occitan,Europe
+Ethiopia,ኢትዮጵያ,251,AF,Addis Ababa,ETB,am,Amharic,አማርኛ,Africa
+Finland,Suomi,358,EU,Helsinki,EUR,fi,Finnish,Suomi,Europe
+Finland,Suomi,358,EU,Helsinki,EUR,sv,Swedish,Svenska,Europe
+Fiji,Fiji,679,OC,Suva,FJD,en,English,English,Oceania
+Fiji,Fiji,679,OC,Suva,FJD,fj,Fijian,Na Vosa Vakaviti,Oceania
+Fiji,Fiji,679,OC,Suva,FJD,hi,Hindi,हिन्दी,Oceania
+Fiji,Fiji,679,OC,Suva,FJD,ur,Urdu,اردو,Oceania
+Falkland Islands,Falkland Islands,500,SA,Stanley,FKP,en,English,English,South America
+Micronesia,Micronesia,691,OC,Palikir,USD,en,English,English,Oceania
+Faroe Islands,Føroyar,298,EU,Tórshavn,DKK,fo,Faroese,Føroyskt,Europe
+France,France,33,EU,Paris,EUR,fr,French,Français,Europe
+Gabon,Gabon,241,AF,Libreville,XAF,fr,French,Français,Africa
+United Kingdom,United Kingdom,44,EU,London,GBP,en,English,English,Europe
+Grenada,Grenada,1473,NA,St. George's,XCD,en,English,English,North America
+Georgia,საქართველო,995,AS,Tbilisi,GEL,ka,Georgian,ქართული,Asia
+French Guiana,Guyane française,594,SA,Cayenne,EUR,fr,French,Français,South America
+Guernsey,Guernsey,44,EU,St. Peter Port,GBP,en,English,English,Europe
+Guernsey,Guernsey,44,EU,St. Peter Port,GBP,fr,French,Français,Europe
+Ghana,Ghana,233,AF,Accra,GHS,en,English,English,Africa
+Gibraltar,Gibraltar,350,EU,Gibraltar,GIP,en,English,English,Europe
+Greenland,Kalaallit Nunaat,299,NA,Nuuk,DKK,kl,Greenlandic,Kalaallisut,North America
+Gambia,Gambia,220,AF,Banjul,GMD,en,English,English,Africa
+Guinea,Guinée,224,AF,Conakry,GNF,fr,French,Français,Africa
+Guinea,Guinée,224,AF,Conakry,GNF,ff,Peul,Fulfulde,Africa
+Guadeloupe,Guadeloupe,590,NA,Basse-Terre,EUR,fr,French,Français,North America
+Equatorial Guinea,Guinea Ecuatorial,240,AF,Malabo,XAF,es,Spanish,Español,Africa
+Equatorial Guinea,Guinea Ecuatorial,240,AF,Malabo,XAF,fr,French,Français,Africa
+Greece,Ελλάδα,30,EU,Athens,EUR,el,Greek,Ελληνικά,Europe
+South Georgia and the South Sandwich Islands,South Georgia,500,AN,King Edward Point,GBP,en,English,English,Antarctica
+Guatemala,Guatemala,502,NA,Guatemala City,GTQ,es,Spanish,Español,North America
+Guam,Guam,1671,OC,Hagåtña,USD,en,English,English,Oceania
+Guam,Guam,1671,OC,Hagåtña,USD,ch,Chamorro,Chamoru,Oceania
+Guam,Guam,1671,OC,Hagåtña,USD,es,Spanish,Español,Oceania
+Guinea-Bissau,Guiné-Bissau,245,AF,Bissau,XOF,pt,Portuguese,Português,Africa
+Guyana,Guyana,592,SA,Georgetown,GYD,en,English,English,South America
+Hong Kong,香港,852,AS,City of Victoria,HKD,zh,Chinese,中文,Asia
+Hong Kong,香港,852,AS,City of Victoria,HKD,en,English,English,Asia
+Heard Island and McDonald Islands,Heard Island and McDonald Islands,61,AN,"",AUD,en,English,English,Antarctica
+Honduras,Honduras,504,NA,Tegucigalpa,HNL,es,Spanish,Español,North America
+Croatia,Hrvatska,385,EU,Zagreb,HRK,hr,Croatian,Hrvatski,Europe
+Haiti,Haïti,509,NA,Port-au-Prince,"HTG,USD",fr,French,Français,North America
+Haiti,Haïti,509,NA,Port-au-Prince,"HTG,USD",ht,Haitian,Krèyol ayisyen,North America
+Hungary,Magyarország,36,EU,Budapest,HUF,hu,Hungarian,Magyar,Europe
+Indonesia,Indonesia,62,AS,Jakarta,IDR,id,Indonesian,Bahasa Indonesia,Asia
+Ireland,Éire,353,EU,Dublin,EUR,ga,Irish,Gaeilge,Europe
+Ireland,Éire,353,EU,Dublin,EUR,en,English,English,Europe
+Israel,יִשְׂרָאֵל,972,AS,Jerusalem,ILS,he,Hebrew,עברית,Asia
+Israel,יִשְׂרָאֵל,972,AS,Jerusalem,ILS,ar,Arabic,العربية,Asia
+Isle of Man,Isle of Man,44,EU,Douglas,GBP,en,English,English,Europe
+Isle of Man,Isle of Man,44,EU,Douglas,GBP,gv,Manx,Gaelg,Europe
+India,भारत,91,AS,New Delhi,INR,hi,Hindi,हिन्दी,Asia
+India,भारत,91,AS,New Delhi,INR,en,English,English,Asia
+British Indian Ocean Territory,British Indian Ocean Territory,246,AS,Diego Garcia,USD,en,English,English,Asia
+Iraq,العراق,964,AS,Baghdad,IQD,ar,Arabic,العربية,Asia
+Iraq,العراق,964,AS,Baghdad,IQD,ku,Kurdish,Kurdî / كوردی,Asia
+Iran,ایران,98,AS,Tehran,IRR,fa,Persian,فارسی,Asia
+Iceland,Ísland,354,EU,Reykjavik,ISK,is,Icelandic,Íslenska,Europe
+Italy,Italia,39,EU,Rome,EUR,it,Italian,Italiano,Europe
+Jersey,Jersey,44,EU,Saint Helier,GBP,en,English,English,Europe
+Jersey,Jersey,44,EU,Saint Helier,GBP,fr,French,Français,Europe
+Jamaica,Jamaica,1876,NA,Kingston,JMD,en,English,English,North America
+Jordan,الأردن,962,AS,Amman,JOD,ar,Arabic,العربية,Asia
+Japan,日本,81,AS,Tokyo,JPY,ja,Japanese,日本語,Asia
+Kenya,Kenya,254,AF,Nairobi,KES,en,English,English,Africa
+Kenya,Kenya,254,AF,Nairobi,KES,sw,Swahili,Kiswahili,Africa
+Kyrgyzstan,Кыргызстан,996,AS,Bishkek,KGS,ky,Kirghiz,Kırgızca / Кыргызча,Asia
+Kyrgyzstan,Кыргызстан,996,AS,Bishkek,KGS,ru,Russian,Русский,Asia
+Cambodia,Kâmpŭchéa,855,AS,Phnom Penh,KHR,km,Cambodian,ភាសាខ្មែរ,Asia
+Kiribati,Kiribati,686,OC,South Tarawa,AUD,en,English,English,Oceania
+Comoros,Komori,269,AF,Moroni,KMF,ar,Arabic,العربية,Africa
+Comoros,Komori,269,AF,Moroni,KMF,fr,French,Français,Africa
+Saint Kitts and Nevis,Saint Kitts and Nevis,1869,NA,Basseterre,XCD,en,English,English,North America
+North Korea,북한,850,AS,Pyongyang,KPW,ko,Korean,한국어,Asia
+South Korea,대한민국,82,AS,Seoul,KRW,ko,Korean,한국어,Asia
+Kuwait,الكويت,965,AS,Kuwait City,KWD,ar,Arabic,العربية,Asia
+Cayman Islands,Cayman Islands,1345,NA,George Town,KYD,en,English,English,North America
+Kazakhstan,Қазақстан,"76,77",AS,Astana,KZT,kk,Kazakh,Қазақша,Asia
+Kazakhstan,Қазақстан,"76,77",AS,Astana,KZT,ru,Russian,Русский,Asia
+Laos,ສປປລາວ,856,AS,Vientiane,LAK,lo,Laotian,ລາວ / Pha xa lao,Asia
+Lebanon,لبنان,961,AS,Beirut,LBP,ar,Arabic,العربية,Asia
+Lebanon,لبنان,961,AS,Beirut,LBP,fr,French,Français,Asia
+Saint Lucia,Saint Lucia,1758,NA,Castries,XCD,en,English,English,North America
+Liechtenstein,Liechtenstein,423,EU,Vaduz,CHF,de,German,Deutsch,Europe
+Sri Lanka,śrī laṃkāva,94,AS,Colombo,LKR,si,Sinhalese,සිංහල,Asia
+Sri Lanka,śrī laṃkāva,94,AS,Colombo,LKR,ta,Tamil,தமிழ்,Asia
+Liberia,Liberia,231,AF,Monrovia,LRD,en,English,English,Africa
+Lesotho,Lesotho,266,AF,Maseru,"LSL,ZAR",en,English,English,Africa
+Lesotho,Lesotho,266,AF,Maseru,"LSL,ZAR",st,Southern Sotho,Sesotho,Africa
+Lithuania,Lietuva,370,EU,Vilnius,EUR,lt,Lithuanian,Lietuvių,Europe
+Luxembourg,Luxembourg,352,EU,Luxembourg,EUR,fr,French,Français,Europe
+Luxembourg,Luxembourg,352,EU,Luxembourg,EUR,de,German,Deutsch,Europe
+Luxembourg,Luxembourg,352,EU,Luxembourg,EUR,lb,Luxembourgish,Lëtzebuergesch,Europe
+Latvia,Latvija,371,EU,Riga,EUR,lv,Latvian,Latviešu,Europe
+Libya,‏ليبيا,218,AF,Tripoli,LYD,ar,Arabic,العربية,Africa
+Morocco,المغرب,212,AF,Rabat,MAD,ar,Arabic,العربية,Africa
+Monaco,Monaco,377,EU,Monaco,EUR,fr,French,Français,Europe
+Moldova,Moldova,373,EU,Chișinău,MDL,ro,Romanian,Română,Europe
+Montenegro,Црна Гора,382,EU,Podgorica,EUR,sr,Serbian,Српски,Europe
+Montenegro,Црна Гора,382,EU,Podgorica,EUR,bs,Bosnian,Bosanski,Europe
+Montenegro,Црна Гора,382,EU,Podgorica,EUR,sq,Albanian,Shqip,Europe
+Montenegro,Црна Гора,382,EU,Podgorica,EUR,hr,Croatian,Hrvatski,Europe
+Saint Martin,Saint-Martin,590,NA,Marigot,EUR,en,English,English,North America
+Saint Martin,Saint-Martin,590,NA,Marigot,EUR,fr,French,Français,North America
+Saint Martin,Saint-Martin,590,NA,Marigot,EUR,nl,Dutch,Nederlands,North America
+Madagascar,Madagasikara,261,AF,Antananarivo,MGA,fr,French,Français,Africa
+Madagascar,Madagasikara,261,AF,Antananarivo,MGA,mg,Malagasy,Malagasy,Africa
+Marshall Islands,M̧ajeļ,692,OC,Majuro,USD,en,English,English,Oceania
+Marshall Islands,M̧ajeļ,692,OC,Majuro,USD,mh,Marshallese,Kajin Majel / Ebon,Oceania
+North Macedonia,Северна Македонија,389,EU,Skopje,MKD,mk,Macedonian,Македонски,Europe
+Mali,Mali,223,AF,Bamako,XOF,fr,French,Français,Africa
+Myanmar [Burma],မြန်မာ,95,AS,Naypyidaw,MMK,my,Burmese,မြန်မာစာ,Asia
+Mongolia,Монгол улс,976,AS,Ulan Bator,MNT,mn,Mongolian,Монгол,Asia
+Macao,澳門,853,AS,"",MOP,zh,Chinese,中文,Asia
+Macao,澳門,853,AS,"",MOP,pt,Portuguese,Português,Asia
+Northern Mariana Islands,Northern Mariana Islands,1670,OC,Saipan,USD,en,English,English,Oceania
+Northern Mariana Islands,Northern Mariana Islands,1670,OC,Saipan,USD,ch,Chamorro,Chamoru,Oceania
+Martinique,Martinique,596,NA,Fort-de-France,EUR,fr,French,Français,North America
+Mauritania,موريتانيا,222,AF,Nouakchott,MRU,ar,Arabic,العربية,Africa
+Montserrat,Montserrat,1664,NA,Plymouth,XCD,en,English,English,North America
+Malta,Malta,356,EU,Valletta,EUR,mt,Maltese,bil-Malti,Europe
+Malta,Malta,356,EU,Valletta,EUR,en,English,English,Europe
+Mauritius,Maurice,230,AF,Port Louis,MUR,en,English,English,Africa
+Maldives,Maldives,960,AS,Malé,MVR,dv,Divehi,ދިވެހިބަސް,Asia
+Malawi,Malawi,265,AF,Lilongwe,MWK,en,English,English,Africa
+Malawi,Malawi,265,AF,Lilongwe,MWK,ny,Chichewa,Chi-Chewa,Africa
+Mexico,México,52,NA,Mexico City,MXN,es,Spanish,Español,North America
+Malaysia,Malaysia,60,AS,Kuala Lumpur,MYR,ms,Malay,Bahasa Melayu,Asia
+Mozambique,Moçambique,258,AF,Maputo,MZN,pt,Portuguese,Português,Africa
+Namibia,Namibia,264,AF,Windhoek,"NAD,ZAR",en,English,English,Africa
+Namibia,Namibia,264,AF,Windhoek,"NAD,ZAR",af,Afrikaans,Afrikaans,Africa
+New Caledonia,Nouvelle-Calédonie,687,OC,Nouméa,XPF,fr,French,Français,Oceania
+Niger,Niger,227,AF,Niamey,XOF,fr,French,Français,Africa
+Norfolk Island,Norfolk Island,672,OC,Kingston,AUD,en,English,English,Oceania
+Nigeria,Nigeria,234,AF,Abuja,NGN,en,English,English,Africa
+Nicaragua,Nicaragua,505,NA,Managua,NIO,es,Spanish,Español,North America
+Netherlands,Nederland,31,EU,Amsterdam,EUR,nl,Dutch,Nederlands,Europe
+Norway,Norge,47,EU,Oslo,NOK,no,Norwegian,Norsk (bokmål / riksmål),Europe
+Norway,Norge,47,EU,Oslo,NOK,nn,Norwegian Nynorsk,Norsk (nynorsk),Europe
+Nepal,नपल,977,AS,Kathmandu,NPR,ne,Nepali,नेपाली,Asia
+Nauru,Nauru,674,OC,Yaren,AUD,en,English,English,Oceania
+Nauru,Nauru,674,OC,Yaren,AUD,na,Nauruan,Dorerin Naoero,Oceania
+Niue,Niuē,683,OC,Alofi,NZD,en,English,English,Oceania
+New Zealand,New Zealand,64,OC,Wellington,NZD,en,English,English,Oceania
+New Zealand,New Zealand,64,OC,Wellington,NZD,mi,Maori,Māori,Oceania
+Oman,عمان,968,AS,Muscat,OMR,ar,Arabic,العربية,Asia
+Panama,Panamá,507,NA,Panama City,"PAB,USD",es,Spanish,Español,North America
+Peru,Perú,51,SA,Lima,PEN,es,Spanish,Español,South America
+French Polynesia,Polynésie française,689,OC,Papeetē,XPF,fr,French,Français,Oceania
+Papua New Guinea,Papua Niugini,675,OC,Port Moresby,PGK,en,English,English,Oceania
+Philippines,Pilipinas,63,AS,Manila,PHP,en,English,English,Asia
+Pakistan,Pakistan,92,AS,Islamabad,PKR,en,English,English,Asia
+Pakistan,Pakistan,92,AS,Islamabad,PKR,ur,Urdu,اردو,Asia
+Poland,Polska,48,EU,Warsaw,PLN,pl,Polish,Polski,Europe
+Saint Pierre and Miquelon,Saint-Pierre-et-Miquelon,508,NA,Saint-Pierre,EUR,fr,French,Français,North America
+Pitcairn Islands,Pitcairn Islands,64,OC,Adamstown,NZD,en,English,English,Oceania
+Puerto Rico,Puerto Rico,"1787,1939",NA,San Juan,USD,es,Spanish,Español,North America
+Puerto Rico,Puerto Rico,"1787,1939",NA,San Juan,USD,en,English,English,North America
+Palestine,فلسطين,970,AS,Ramallah,ILS,ar,Arabic,العربية,Asia
+Portugal,Portugal,351,EU,Lisbon,EUR,pt,Portuguese,Português,Europe
+Palau,Palau,680,OC,Ngerulmud,USD,en,English,English,Oceania
+Paraguay,Paraguay,595,SA,Asunción,PYG,es,Spanish,Español,South America
+Paraguay,Paraguay,595,SA,Asunción,PYG,gn,Guarani,Avañe'ẽ,South America
+Qatar,قطر,974,AS,Doha,QAR,ar,Arabic,العربية,Asia
+Réunion,La Réunion,262,AF,Saint-Denis,EUR,fr,French,Français,Africa
+Romania,România,40,EU,Bucharest,RON,ro,Romanian,Română,Europe
+Serbia,Србија,381,EU,Belgrade,RSD,sr,Serbian,Српски,Europe
+Russia,Россия,7,EU,Moscow,RUB,ru,Russian,Русский,Europe
+Rwanda,Rwanda,250,AF,Kigali,RWF,rw,Rwandi,Kinyarwandi,Africa
+Rwanda,Rwanda,250,AF,Kigali,RWF,en,English,English,Africa
+Rwanda,Rwanda,250,AF,Kigali,RWF,fr,French,Français,Africa
+Saudi Arabia,العربية السعودية,966,AS,Riyadh,SAR,ar,Arabic,العربية,Asia
+Solomon Islands,Solomon Islands,677,OC,Honiara,SBD,en,English,English,Oceania
+Seychelles,Seychelles,248,AF,Victoria,SCR,fr,French,Français,Africa
+Seychelles,Seychelles,248,AF,Victoria,SCR,en,English,English,Africa
+Sudan,السودان,249,AF,Khartoum,SDG,ar,Arabic,العربية,Africa
+Sudan,السودان,249,AF,Khartoum,SDG,en,English,English,Africa
+Sweden,Sverige,46,EU,Stockholm,SEK,sv,Swedish,Svenska,Europe
+Singapore,Singapore,65,AS,Singapore,SGD,en,English,English,Asia
+Singapore,Singapore,65,AS,Singapore,SGD,ms,Malay,Bahasa Melayu,Asia
+Singapore,Singapore,65,AS,Singapore,SGD,ta,Tamil,தமிழ்,Asia
+Singapore,Singapore,65,AS,Singapore,SGD,zh,Chinese,中文,Asia
+Saint Helena,Saint Helena,290,AF,Jamestown,SHP,en,English,English,Africa
+Slovenia,Slovenija,386,EU,Ljubljana,EUR,sl,Slovenian,Slovenščina,Europe
+Svalbard and Jan Mayen,Svalbard og Jan Mayen,4779,EU,Longyearbyen,NOK,no,Norwegian,Norsk (bokmål / riksmål),Europe
+Slovakia,Slovensko,421,EU,Bratislava,EUR,sk,Slovak,Slovenčina,Europe
+Sierra Leone,Sierra Leone,232,AF,Freetown,SLL,en,English,English,Africa
+San Marino,San Marino,378,EU,City of San Marino,EUR,it,Italian,Italiano,Europe
+Senegal,Sénégal,221,AF,Dakar,XOF,fr,French,Français,Africa
+Somalia,Soomaaliya,252,AF,Mogadishu,SOS,so,Somalia,Soomaaliga,Africa
+Somalia,Soomaaliya,252,AF,Mogadishu,SOS,ar,Arabic,العربية,Africa
+Suriname,Suriname,597,SA,Paramaribo,SRD,nl,Dutch,Nederlands,South America
+South Sudan,South Sudan,211,AF,Juba,SSP,en,English,English,Africa
+São Tomé and Príncipe,São Tomé e Príncipe,239,AF,São Tomé,STN,pt,Portuguese,Português,Africa
+El Salvador,El Salvador,503,NA,San Salvador,"SVC,USD",es,Spanish,Español,North America
+Sint Maarten,Sint Maarten,1721,NA,Philipsburg,ANG,nl,Dutch,Nederlands,North America
+Sint Maarten,Sint Maarten,1721,NA,Philipsburg,ANG,en,English,English,North America
+Syria,سوريا,963,AS,Damascus,SYP,ar,Arabic,العربية,Asia
+Swaziland,Swaziland,268,AF,Lobamba,SZL,en,English,English,Africa
+Swaziland,Swaziland,268,AF,Lobamba,SZL,ss,Swati,SiSwati,Africa
+Turks and Caicos Islands,Turks and Caicos Islands,1649,NA,Cockburn Town,USD,en,English,English,North America
+Chad,Tchad,235,AF,N'Djamena,XAF,fr,French,Français,Africa
+Chad,Tchad,235,AF,N'Djamena,XAF,ar,Arabic,العربية,Africa
+French Southern Territories,Territoire des Terres australes et antarctiques fr,262,AN,Port-aux-Français,EUR,fr,French,Français,Antarctica
+Togo,Togo,228,AF,Lomé,XOF,fr,French,Français,Africa
+Thailand,ประเทศไทย,66,AS,Bangkok,THB,th,Thai,ไทย / Phasa Thai,Asia
+Tajikistan,Тоҷикистон,992,AS,Dushanbe,TJS,tg,Tajik,Тоҷикӣ,Asia
+Tajikistan,Тоҷикистон,992,AS,Dushanbe,TJS,ru,Russian,Русский,Asia
+Tokelau,Tokelau,690,OC,Fakaofo,NZD,en,English,English,Oceania
+East Timor,Timor-Leste,670,OC,Dili,USD,pt,Portuguese,Português,Oceania
+Turkmenistan,Türkmenistan,993,AS,Ashgabat,TMT,tk,Turkmen,Туркмен / تركمن,Asia
+Turkmenistan,Türkmenistan,993,AS,Ashgabat,TMT,ru,Russian,Русский,Asia
+Tunisia,تونس,216,AF,Tunis,TND,ar,Arabic,العربية,Africa
+Tonga,Tonga,676,OC,Nuku'alofa,TOP,en,English,English,Oceania
+Tonga,Tonga,676,OC,Nuku'alofa,TOP,to,Tonga,Lea Faka-Tonga,Oceania
+Turkey,Türkiye,90,AS,Ankara,TRY,tr,Turkish,Türkçe,Asia
+Trinidad and Tobago,Trinidad and Tobago,1868,NA,Port of Spain,TTD,en,English,English,North America
+Tuvalu,Tuvalu,688,OC,Funafuti,AUD,en,English,English,Oceania
+Taiwan,臺灣,886,AS,Taipei,TWD,zh,Chinese,中文,Asia
+Tanzania,Tanzania,255,AF,Dodoma,TZS,sw,Swahili,Kiswahili,Africa
+Tanzania,Tanzania,255,AF,Dodoma,TZS,en,English,English,Africa
+Ukraine,Україна,380,EU,Kyiv,UAH,uk,Ukrainian,Українська,Europe
+Uganda,Uganda,256,AF,Kampala,UGX,en,English,English,Africa
+Uganda,Uganda,256,AF,Kampala,UGX,sw,Swahili,Kiswahili,Africa
+U.S. Minor Outlying Islands,United States Minor Outlying Islands,1,OC,"",USD,en,English,English,Oceania
+United States,United States,1,NA,Washington D.C.,"USD,USN,USS",en,English,English,North America
+Uruguay,Uruguay,598,SA,Montevideo,"UYI,UYU",es,Spanish,Español,South America
+Uzbekistan,O‘zbekiston,998,AS,Tashkent,UZS,uz,Uzbek,Ўзбек,Asia
+Uzbekistan,O‘zbekiston,998,AS,Tashkent,UZS,ru,Russian,Русский,Asia
+Vatican City,Vaticano,"39066,379",EU,Vatican City,EUR,it,Italian,Italiano,Europe
+Vatican City,Vaticano,"39066,379",EU,Vatican City,EUR,la,Latin,Latina,Europe
+Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,1784,NA,Kingstown,XCD,en,English,English,North America
+Venezuela,Venezuela,58,SA,Caracas,VES,es,Spanish,Español,South America
+British Virgin Islands,British Virgin Islands,1284,NA,Road Town,USD,en,English,English,North America
+U.S. Virgin Islands,United States Virgin Islands,1340,NA,Charlotte Amalie,USD,en,English,English,North America
+Vietnam,Việt Nam,84,AS,Hanoi,VND,vi,Vietnamese,Tiếng Việt,Asia
+Vanuatu,Vanuatu,678,OC,Port Vila,VUV,bi,Bislama,Bislama,Oceania
+Vanuatu,Vanuatu,678,OC,Port Vila,VUV,en,English,English,Oceania
+Vanuatu,Vanuatu,678,OC,Port Vila,VUV,fr,French,Français,Oceania
+Wallis and Futuna,Wallis et Futuna,681,OC,Mata-Utu,XPF,fr,French,Français,Oceania
+Samoa,Samoa,685,OC,Apia,WST,sm,Samoan,Gagana Samoa,Oceania
+Samoa,Samoa,685,OC,Apia,WST,en,English,English,Oceania
+Kosovo,Republika e Kosovës,"377,381,383,386",EU,Pristina,EUR,sq,Albanian,Shqip,Europe
+Kosovo,Republika e Kosovës,"377,381,383,386",EU,Pristina,EUR,sr,Serbian,Српски,Europe
+Yemen,اليَمَن,967,AS,Sana'a,YER,ar,Arabic,العربية,Asia
+Mayotte,Mayotte,262,AF,Mamoudzou,EUR,fr,French,Français,Africa
+South Africa,South Africa,27,AF,Pretoria,ZAR,af,Afrikaans,Afrikaans,Africa
+South Africa,South Africa,27,AF,Pretoria,ZAR,en,English,English,Africa
+South Africa,South Africa,27,AF,Pretoria,ZAR,nr,South Ndebele,isiNdebele,Africa
+South Africa,South Africa,27,AF,Pretoria,ZAR,st,Southern Sotho,Sesotho,Africa
+South Africa,South Africa,27,AF,Pretoria,ZAR,ss,Swati,SiSwati,Africa
+South Africa,South Africa,27,AF,Pretoria,ZAR,tn,Tswana,Setswana,Africa
+South Africa,South Africa,27,AF,Pretoria,ZAR,ts,Tsonga,Xitsonga,Africa
+South Africa,South Africa,27,AF,Pretoria,ZAR,ve,Venda,Tshivenḓa,Africa
+South Africa,South Africa,27,AF,Pretoria,ZAR,xh,Xhosa,isiXhosa,Africa
+South Africa,South Africa,27,AF,Pretoria,ZAR,zu,Zulu,isiZulu,Africa
+Zambia,Zambia,260,AF,Lusaka,ZMK,en,English,English,Africa
+Zimbabwe,Zimbabwe,263,AF,Harare,"USD,ZAR,BWP,GBP,AUD,CNY,INR,JPY",en,English,English,Africa
+Zimbabwe,Zimbabwe,263,AF,Harare,"USD,ZAR,BWP,GBP,AUD,CNY,INR,JPY",sn,Shona,chiShona,Africa
+Zimbabwe,Zimbabwe,263,AF,Harare,"USD,ZAR,BWP,GBP,AUD,CNY,INR,JPY",nd,North Ndebele,Sindebele,Africa
