@@ -3,7 +3,7 @@ A quick and dirty analysis on FIFA Game data
 
 Just Run **index.Rmd** inside Rstudio
 
-##wARNING##
+##WARNING##
 
 Check if the libraries mentioned below are installed:
 
